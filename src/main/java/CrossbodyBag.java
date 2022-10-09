@@ -38,20 +38,20 @@ public class CrossbodyBag extends Bag{
         this.numberOfStraps = numberOfStraps;
     }
 
-    public int getNumberOfStraps(){
-
-        return numberOfStraps;
-    }
-
     public void enhance(){
 
         super.increaseCapacity(2);
 
     }
 
+    public int getNumberOfStraps(){
+
+        return numberOfStraps;
+    }
+
     public String toString(){
 
-        return this.getColor() + " Crossbody Bag with " + this.numberOfStraps + " straps (" + this.getNumberofContents() + " / " +
-                 this.getCapacity() + ")";
+        return this.getColor() + " Crossbody Bag with " + this.numberOfStraps + " straps ("
+                + this.getNumberOfContents() + " / " + this.getCapacity() + ")";
     }
 }
